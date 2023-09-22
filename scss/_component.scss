@@ -1,0 +1,111 @@
+.card {
+    width: 450px;
+    padding: 2.5rem 2rem;
+
+    background: $dark_blue;
+    background: linear-gradient(309deg, $dark_blue 0%, $ligher_dark_blue 100%);
+
+    border-radius: 25px;
+
+    &__voting-box, &__thank-you{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .card__text-container{
+            .card__title {
+                color: $white;    
+                padding-bottom: 10px;
+            }
+
+            .card__desc {
+                color: $txt_color;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    &__voting-box {
+        align-items: flex-start;
+        
+        .card__icon {
+            padding: 15px;
+            background-color: $bg_icon_and_button;
+            border-radius: 50%;
+        }
+
+        .card__button-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        
+            .btn-vote {
+                display: block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                
+                border-radius: 100%;
+            
+                background-color: $bg_icon_and_button;
+                color: $txt_color;
+                font-weight: 700;
+
+                cursor: pointer;
+            
+                &:hover {
+                    background-color: lighten($bg_icon_and_button, 50%);
+                    color: white;
+                }
+            }
+
+            .active {
+                background-color: $orange;
+                color: $white;
+            }
+        }
+
+        .btn-submit {
+            width: 100%;
+            border-radius: 25px;
+            height: 50px;
+
+            background-color: $orange;
+            color: $white;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            
+            cursor: pointer;
+
+            &:is(:hover, :active) {
+                background-color: $white;
+                color: $orange;
+            }
+        }
+    }
+
+    &__thank-you {
+        align-items: center;
+
+        .card__text-container {
+            text-align: center;
+        }
+
+        .label {
+            background-color: $bg_icon_and_button;
+            color: $orange;
+            font-size: 15px;
+            padding: 0.525rem 1.35rem;
+            border-radius: 50px;
+            
+            p {
+                line-height: 15px;
+            }
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}

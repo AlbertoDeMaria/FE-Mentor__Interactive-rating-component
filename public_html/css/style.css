@@ -1,0 +1,162 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+  border: 0;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.card {
+  width: 450px;
+  padding: 2.5rem 2rem;
+  background: #171e28;
+  background: linear-gradient(309deg, #171e28 0%, #1e252f 100%);
+  border-radius: 25px;
+}
+.card__voting-box, .card__thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.card__voting-box .card__text-container .card__title, .card__thank-you .card__text-container .card__title {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.card__voting-box .card__text-container .card__desc, .card__thank-you .card__text-container .card__desc {
+  color: hsl(216, 12%, 54%);
+  line-height: 1.6;
+}
+.card__voting-box {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card__voting-box .card__icon {
+  padding: 15px;
+  background-color: #262f38;
+  border-radius: 50%;
+}
+.card__voting-box .card__button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__voting-box .card__button-container .btn-vote {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 100%;
+  background-color: #262f38;
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.card__voting-box .card__button-container .btn-vote:hover {
+  background-color: #9fafbe;
+  color: white;
+}
+.card__voting-box .card__button-container .active {
+  background-color: #ff6c03;
+  color: #ffffff;
+}
+.card__voting-box .btn-submit {
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #ff6c03;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card__voting-box .btn-submit:is(:hover, :active) {
+  background-color: #ffffff;
+  color: #ff6c03;
+}
+.card__thank-you {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__thank-you .card__text-container {
+  text-align: center;
+}
+.card__thank-you .label {
+  background-color: #262f38;
+  color: #ff6c03;
+  font-size: 15px;
+  padding: 0.525rem 1.35rem;
+  border-radius: 50px;
+}
+.card__thank-you .label p {
+  line-height: 15px;
+}
+.card .hide {
+  display: none;
+}

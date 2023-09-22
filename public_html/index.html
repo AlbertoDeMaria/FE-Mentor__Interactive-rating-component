@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Interactive rating component - Front-end Mentor</title>
+</head>
+<body>
+    
+    <div class="card">
+        <div id="card-voting" class="card__voting-box">
+            <img class="card__icon" src="images/icon-star.svg" alt="icon-star">
+            <div class="card__text-container">
+                <h1 class="card__title">How did we do?</h1>
+                <p class="card__desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </div>
+            <div class="card__button-container">
+                <button id="btn-vote" value="1" class="btn-vote">1</button>
+                <button id="btn-vote" value="2" class="btn-vote">2</button>
+                <button id="btn-vote" value="3" class="btn-vote">3</button>
+                <button id="btn-vote" value="4" class="btn-vote">4</button>
+                <button id="btn-vote" value="5" class="btn-vote">5</button>
+            </div>
+            <button id="btn-submit" class="btn-submit">SUBMIT</button>
+        </div>
+
+        <div id="card-thank-you" class="card__thank-you hide">
+            <img src="images/illustration-thank-you.svg" alt="thank-you-illustration">
+            <div class="label">
+                <p>You selected <span id="voting"></span> out of 5</p>
+            </div>
+            <div class="card__text-container">
+                <h1 class="card__title">Thank you!</h1>
+                <p class="card__desc">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
