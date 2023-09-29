@@ -12,7 +12,7 @@ You can find the original design provided by Front-end Mentor and my result.
 ![Design by Front-end Mentor.](/design/desktop-thank-you-state.jpg)
 
 ### My Result
-Online version: [Live link](https://albertodemaria.github.io/FE-Mentor__Product-preview-card-component/public_html/index.html)
+Online version: [Live link](https://albertodemaria.github.io/FE-Mentor__Interactive-rating-component/public_html/index.html)
 
 ![My result.](/design/result/Final_1.png)
 ![My result.](/design/result/Final_2.png)
